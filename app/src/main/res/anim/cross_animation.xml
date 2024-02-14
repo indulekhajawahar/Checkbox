@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator"
+    android:ordering="sequentially"
+    android:shareInterpolator="false">
+    <!-- Step 1 -->
+    <objectAnimator
+        android:duration="1000"
+        android:propertyName="pathData"
+        android:valueFrom="M6,11 l0,0 l0,0"
+        android:valueTo="M6,11 l3.5,4 l0,0"
+        android:valueType="pathType" />
+    <!-- Step 2 -->
+    <objectAnimator
+        android:duration="1000"
+        android:propertyName="pathData"
+        android:valueFrom="M6.4, 6.4 L17.6,
+        17.6 M6.4,
+        17.6 L17.6, 6.4"
+        android:valueTo="M6.4, 6.4 L17.6,
+        17.6 M6.4,
+        17.6 L17.6, 6.4"
+        android:valueType="pathType" />
+</set>
